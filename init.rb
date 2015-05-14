@@ -1,12 +1,7 @@
 require 'redmine'
 
-## Taken from lib/redmine.rb
-#if RUBY_VERSION < '1.9'
-#  require 'faster_csv'
-#else
-#  require 'csv'
-#  FCSV = CSV
-#end
+require 'csv'
+FCSV = CSV
 
 if Rails::VERSION::MAJOR < 3
   require 'dispatcher'
